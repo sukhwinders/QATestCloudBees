@@ -8,11 +8,13 @@ public class clsOpenBrowser {
 	
 	WebDriver dri;
 	
-	public clsOpenBrowser()
+	public clsOpenBrowser(WebDriver driver)
 	{
 		//System.setProperty("webdriver.chrome.driver","/Users/sukhwinders/Desktop/For Jenkins/chromedriver");
 		//dri=new ChromeDriver();
+		this.dri=driver;
 		dri=new FirefoxDriver();
 		dri.get("https://login.salesforce.com");	
 	}
+	
 }
