@@ -1,5 +1,7 @@
 package ExecuteChrome;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
@@ -12,8 +14,9 @@ public class clsExecuteChrome {
 	
 
 	@Test
-	public void ChromeOpen()
+	public void ChromeOpen() throws MalformedURLException
 	{
+		System.out.println("Chrome browser has to be opened");
 		clsOpenBrowser qa=new clsOpenBrowser(driver);
 		//System.out.println("FireFox opened");
 		System.out.println("Chrome browser opened");
