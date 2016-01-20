@@ -29,11 +29,11 @@ public class clsOpenBrowser {
 		//dri=new ChromeDriver();
 		
 		//this.dri=driver;
-		//dri=new FirefoxDriver();
+		dri=new FirefoxDriver();
 		
-		FirefoxBinary firefox = new FirefoxBinary();
-		firefox.setEnvironmentProperty("DISPLAY", ":20");
-		dri = new FirefoxDriver(firefox, null);
+		//FirefoxBinary firefox = new FirefoxBinary();
+		//firefox.setEnvironmentProperty("DISPLAY", ":20");
+		//dri = new FirefoxDriver(firefox, null);
 		
 		//DesiredCapabilities capability = DesiredCapabilities.chrome();
 		//WebDriver dri = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
@@ -43,18 +43,10 @@ public class clsOpenBrowser {
 		dri.get("https://login.salesforce.com");	
 	}
 	
-	public static String getDriverDirectory() {
-        String DriverDir = System.getProperty("user.dir") + "/chromedriver";
-//        if (projectDir.contains("/AutomationSalesforce/"))
-//        {
-//            projectDir = projectDir + "src/test/java/Config/";
-//        }
-        System.out.println("Using base directory as: " + DriverDir);
-     return DriverDir; 
-     }
-	
-	
-	
+	public void BrowserClose()
+	{
+		dri.quit();
+	}
 	
 	
 }

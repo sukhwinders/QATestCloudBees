@@ -14,12 +14,13 @@ public class clsExecuteChrome {
 	
 
 	@Test
-	public void ChromeOpen() throws MalformedURLException
+	public void BrowserOpen() throws MalformedURLException
 	{
 		System.out.println("Browser has to be opened");
-		clsOpenBrowser qa=new clsOpenBrowser(driver);
+		clsOpenBrowser bsr=new clsOpenBrowser(driver);
 		//System.out.println("FireFox opened");
-		System.out.println("Browser opened");
+		System.out.println("Browser has been opened");
+		bsr.BrowserClose();
 		
 	}
 	
