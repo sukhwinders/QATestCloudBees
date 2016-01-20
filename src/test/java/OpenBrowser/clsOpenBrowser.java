@@ -13,6 +13,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 
 public class clsOpenBrowser {
@@ -23,14 +24,17 @@ public class clsOpenBrowser {
 	{
 		//System.setProperty("webdriver.chrome.driver","/Users/sukhwinders/Desktop/For Jenkins/chromedriver");
 		
-		ChromeDriverManager.getInstance().setup();
-		dri=new ChromeDriver();
+		//ChromeDriverManager.getInstance().setup();
+		//dri=new ChromeDriver();
 		
 		//this.dri=driver;
-		//dri=new FirefoxDriver();
+		dri=new FirefoxDriver();
 		
-		DesiredCapabilities capability = DesiredCapabilities.chrome();
-		WebDriver dri = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+		//DesiredCapabilities capability = DesiredCapabilities.chrome();
+		//WebDriver dri = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+		//capability.setJavascriptEnabled(true);
+		
+		
 		dri.get("https://login.salesforce.com");	
 	}
 	
