@@ -21,6 +21,7 @@ public class clsExecuteChrome {
 		//System.out.println("FireFox opened");
 		System.out.println("Browser has been opened");
 		bsr.BrowserClose();
+		System.out.println("Browser has been closed");
 		
 	}
 	
