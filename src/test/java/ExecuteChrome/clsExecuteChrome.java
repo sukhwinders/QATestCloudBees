@@ -15,7 +15,8 @@ public class clsExecuteChrome {
 	public void ChromeOpen()
 	{
 		clsOpenBrowser qa=new clsOpenBrowser(driver);
-		System.out.println("FireFox opened");
+		//System.out.println("FireFox opened");
+		System.out.println("Chrome browser opened");
 		
 	}
 	
