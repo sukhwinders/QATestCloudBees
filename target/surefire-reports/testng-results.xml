@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19306" started-at="2016-01-19T08:03:19Z" finished-at="2016-01-19T08:03:38Z">
+  <suite name="Suite" duration-ms="6077" started-at="2016-02-01T11:03:06Z" finished-at="2016-02-01T11:03:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="19306" started-at="2016-01-19T08:03:19Z" finished-at="2016-01-19T08:03:38Z">
+    <test name="Test" duration-ms="6077" started-at="2016-02-01T11:03:06Z" finished-at="2016-02-01T11:03:12Z">
       <class name="ExecuteChrome.clsExecuteChrome">
-        <test-method status="PASS" signature="ChromeOpen()[pri:0, instance:ExecuteChrome.clsExecuteChrome@6d9ebfd1]" name="ChromeOpen" duration-ms="19253" started-at="2016-01-19T13:33:19Z" finished-at="2016-01-19T13:33:38Z">
+        <test-method status="PASS" signature="BrowserOpen()[pri:0, instance:ExecuteChrome.clsExecuteChrome@1550481]" name="BrowserOpen" duration-ms="6053" started-at="2016-02-01T16:33:06Z" finished-at="2016-02-01T16:33:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChromeOpen -->
+        </test-method> <!-- BrowserOpen -->
       </class> <!-- ExecuteChrome.clsExecuteChrome -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
