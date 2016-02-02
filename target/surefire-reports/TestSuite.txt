@@ -1,4 +1,78 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.863 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 84.579 sec <<< FAILURE!
+BrowserOpen(ExecuteChrome.clsExecuteChrome)  Time elapsed: 83.868 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+g.xpi
+1454387643976	addons.xpi	INFO	Mapping ubufox@ubuntu.com to /usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com
+1454387643977	addons.xpi	DEBUG	checkForChanges
+1454387643977	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous4245152028309436696webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.24.1","st":1454387635000,"mt":1454387635000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1449036246000,"mt":1446198270000},"langpack-en-GB@firefox.mozilla.org":{"d":"/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi","e":false,"v":"18.0.2","st":1359760586000},"langpack-en-ZA@firefox.mozilla.org":{"d":"/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi","e":false,"v":"18.0.2","st":1359760586000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com","e":false,"v":"2.6","st":1360793378000,"mt":1353361961000}}}
+1454387643979	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1454387643981	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous4245152028309436696webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.24.1","st":1454387635000,"mt":1454387635000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1449036246000,"mt":1446198270000},"langpack-en-GB@firefox.mozilla.org":{"d":"/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi","e":false,"v":"18.0.2","st":1359760586000},"langpack-en-ZA@firefox.mozilla.org":{"d":"/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi","e":false,"v":"18.0.2","st":1359760586000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com","e":false,"v":"2.6","st":1360793378000,"mt":1353361961000}}}
+1454387643983	addons.xpi	DEBUG	No changes found
+1454387643994	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1454387643994	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1454387643995	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1454387643995	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1454387643995	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1454387643996	addons.manager	DEBUG	Starting provider: GMPProvider
+1454387644002	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1454387644002	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1454387644002	addons.manager	DEBUG	Starting provider: PluginProvider
+1454387644003	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1454387644003	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1454387644004	addons.manager	DEBUG	Completed startup sequence
+1454387644058	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous4245152028309436696webdriver-profile/extensions.json
+1454387644393	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1454387644394	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1454387644394	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1454387644521	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1454387644521	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1454387644523	addons.xpi-utils	DEBUG	Successfully read XPI database
+1454387644638	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1454387644638	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1454387644638	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+Build info: version: '2.24.1', revision: '17205', time: '2012-06-19 15:28:49'
+System info: os.name: 'Linux', os.arch: 'i386', os.version: '3.5.0-23-generic', java.version: '1.8.0_71'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:121)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:106)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:93)
+	at OpenBrowser.clsOpenBrowser.<init>(clsOpenBrowser.java:32)
+	at ExecuteChrome.clsExecuteChrome.BrowserOpen(clsExecuteChrome.java:21)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+g.xpi
+1454387643976	addons.xpi	INFO	Mapping ubufox@ubuntu.com to /usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com
+1454387643977	addons.xpi	DEBUG	checkForChanges
+1454387643977	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous4245152028309436696webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.24.1","st":1454387635000,"mt":1454387635000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1449036246000,"mt":1446198270000},"langpack-en-GB@firefox.mozilla.org":{"d":"/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi","e":false,"v":"18.0.2","st":1359760586000},"langpack-en-ZA@firefox.mozilla.org":{"d":"/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi","e":false,"v":"18.0.2","st":1359760586000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com","e":false,"v":"2.6","st":1360793378000,"mt":1353361961000}}}
+1454387643979	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1454387643981	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous4245152028309436696webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.24.1","st":1454387635000,"mt":1454387635000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1449036246000,"mt":1446198270000},"langpack-en-GB@firefox.mozilla.org":{"d":"/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi","e":false,"v":"18.0.2","st":1359760586000},"langpack-en-ZA@firefox.mozilla.org":{"d":"/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi","e":false,"v":"18.0.2","st":1359760586000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com","e":false,"v":"2.6","st":1360793378000,"mt":1353361961000}}}
+1454387643983	addons.xpi	DEBUG	No changes found
+1454387643994	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1454387643994	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1454387643995	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1454387643995	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1454387643995	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1454387643996	addons.manager	DEBUG	Starting provider: GMPProvider
+1454387644002	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1454387644002	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1454387644002	addons.manager	DEBUG	Starting provider: PluginProvider
+1454387644003	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1454387644003	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1454387644004	addons.manager	DEBUG	Completed startup sequence
+1454387644058	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous4245152028309436696webdriver-profile/extensions.json
+1454387644393	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1454387644394	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1454387644394	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1454387644521	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1454387644521	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1454387644523	addons.xpi-utils	DEBUG	Successfully read XPI database
+1454387644638	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1454387644638	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1454387644638	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:109)
+	... 40 more
